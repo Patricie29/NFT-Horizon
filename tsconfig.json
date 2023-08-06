@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ES2017",
     "lib": [
       "dom",
       "dom.iterable",
@@ -35,7 +35,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/utils/motion.ts",
-    "src/sections/Main.tsx"
+    "src/sections/Main.tsx",
+    "src/components/Navbar.tsx"
   ],
   "exclude": [
     "node_modules"
