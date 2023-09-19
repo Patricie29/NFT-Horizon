@@ -1,16 +1,26 @@
-// import { ThirdwebSDK } from "@thirdweb-dev/sdk";
+// import Moralis from 'moralis';
+
+// // Initialize Moralis with your Moralis application ID and server URL
+// Moralis.start({ apiKey: process.env.NEXT_PUBLIC_API_KEY });
 
 
-// const sdk = new ThirdwebSDK("goerli", {
-//     clientId: 'c56badf04177f215991088df09434db3',
-// });
-// const contract = await sdk.getContract("0xe63b0967EE4C0dAA100054561126e5690D826B5E");
+// // Claiming process using Moralis
+// const claimTestnetEther = async (userAddress: string) => {
+//     try {
+//         // Initiate a transaction using Moralis's web3.js integration or serverless functions
+//         const transaction = await Moralis.Web3API.native.transfer({
+//             to_address: userAddress,
+//             value: '1000000000000000', // Amount in Wei (1 ETH)
+//         });
 
+//         // Handle success, update UI, etc.
+//         console.log('Transaction initiated:', transaction);
+//     } catch (error) {
+//         // Handle error and provide feedback to the user
+//         console.error('Error claiming testnet Ether:', error);
+//     }
+// };
 
-// export const mintNFT = async () => {
-//     const quantity = 1; // how many unique NFTs you want to claim
-//     const tx = await contract.erc721.claim(quantity);
-//     const receipt = tx.receipt; // the transaction receipt
-//     const claimedTokenId = tx.id; // the id of the NFT claimed
-//     const claimedNFT = await tx.data(); // (optional) get the claimed NFT metadata
-// }
+// // Usage
+// const userAddress = '0x...'; // User's Ethereum address
+// claimTestnetEther(userAddress);

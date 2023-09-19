@@ -5,8 +5,6 @@ import styles from '@/styles'
 import { motion } from 'framer-motion'
 import { staggerContainer, fadeIn, planetVariants } from '@/utils/motion'
 import { TitleText, TypingText } from '../components/CustomText'
-import { startingFeatures } from '@/constants'
-import StartSteps from '@/components/StartSteps'
 
 
 interface GetStartedProps {
@@ -46,13 +44,12 @@ const GetStarted: FC<GetStartedProps> = ({ }) => {
                 <TitleText
                     title='Get started with only few Clicks' />
                 <div className='mt-[32px] flex flex-col max-w-[370px] gap-[24px]'>
-                    {startingFeatures.map((oneFeature: string, index: number) => (
-                        <StartSteps
-                            key={oneFeature}
-                            number={index + 1}
-                            text={oneFeature}
-                        />
-                    ))}
+                    <div className={`${styles.flexCenter} flex-row`}>
+                        <div className={`${styles.flexCenter} w-[70px] h-[70px] rounded-[24px] bg-[#323f5d]`}>
+                            <p className='font-bold text-[20px] text-white'>01</p>
+                        </div>
+                        <p className='flex-1 ml-[30px] text-[18px] text-[#b0b0b0] leading-[32px] font-normal'>jjjjjikjkjjjjkjk</p>
+                    </div>
                 </div>
             </motion.div>
         </motion.div>

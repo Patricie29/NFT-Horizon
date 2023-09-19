@@ -55,11 +55,6 @@ export const exploreWorlds: ExploreNFT[] = [
 
 ];
 
-export const startingFeatures: string[] = [
-    "Find a world that suits you and you want to enter",
-    "Enter the world by reading basmalah to be safe",
-    "No need to beat around the bush, just stay on the gas and have fun",
-];
 
 export const newFeatures: NewFeature[] = [
     {
@@ -100,18 +95,18 @@ export const insights: Insight[] = [
 export const socials: Social[] = [
     {
         name: "twitter",
-        url: "/twitter.svg",
+        url: "/socials/twitter.svg",
     },
     {
         name: "linkedin",
-        url: "/linkedin.svg",
+        url: "/socials/linkedin.svg",
     },
     {
         name: "instagram",
-        url: "/instagram.svg",
+        url: "/socials/instagram.svg",
     },
     {
         name: "facebook",
-        url: "/facebook.svg",
+        url: "/socials/facebook.svg",
     },
 ];

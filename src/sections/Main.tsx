@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 import styles from '@/styles'
 import { slideIn, staggerContainer, textVariant } from '@/utils/motion'
 import Image from 'next/image'
-import Link from 'next/link'
 
 
 
@@ -31,21 +30,6 @@ const Main = ({ }) => {
                     variants={textVariant(1.2)}
                     className='flex flex-row justify-center items-center'
                 >
-                    {/* <div className='sm:w-[80px] md:w-[212px] w-[60px] sm:h-[48px] md:h-[108px] h-[38px] md:border-[18px] border-[9px] rounded-r-[50px] border-white sm:mx-2 mx-[6px]' /> */}
-                    {/* <h1 className='font-bold lg:text-[110px] md:text-[80px] sm:text-[60px] text-[44px] lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px] uppercase text-white tracking-[20px]'>HORIZON</h1> */}
-
-                    {/* <h1 className='font-bold lg:text-[110px] md:text-[80px] sm:text-[60px] text-[44px] lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px] uppercase text-white tracking-[10px] md:tracking-[20px] relative'>
-                        <span>HORI</span>
-                        <span className="inline-block transform scale-150 sm:scale-165 translate-x-2 -translate-y-1.1 md:-translate-y-1 md:translate-x-3">
-                            <span className="relative overflow-hidden">
-                                <span className="font-normal">Z</span>
-                                <span className="absolute right-[30px] sm:right-[40px] lg:right-[73px] w-full h-[3.1px] sm:h-[4.5px] lg:h-[8.2px] bg-white top-[12.7px] sm:top-[17.76px] lg:top-[32.2px]"></span>
-                                <span className="absolute left-[19px] sm:left-[28px] lg:left-[60px] w-full h-[3.7px] sm:h-[4.5px] lg:h-[8.2px] bg-white bottom-[10px] sm:bottom-[13.7px] lg:bottom-[24.5px]"></span>
-                            </span>
-                        </span>
-                        <span>ON</span>
-                    </h1> */}
-
                     <h1
                         className="font-bold lg:text-[110px] md:text-[80px] sm:text-[60px] text-[44px] lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px] uppercase text-white tracking-[10px] md:tracking-[20px] relative"
                     >
@@ -58,7 +42,6 @@ const Main = ({ }) => {
                         <span>ON</span>
                     </h1>
                 </motion.div>
-
             </div >
 
 

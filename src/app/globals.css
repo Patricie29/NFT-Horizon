@@ -101,7 +101,132 @@
   filter: blur(150px);
 }
 
-.base-page-size {
+/* CUSTOM WALLET */
+
+/* Connect wallet BTN */
+.customConnectBtn {
+  position: relative;
+  color: white !important;
+  text-transform: uppercase !important;
+  font-size: 15px !important;
+  font-weight: 300 !important;
+  line-height: 35px !important;
+  padding: 0.25rem 1.5rem !important;
+  background-color: transparent !important;
+  border-radius: 6px !important;
+  z-index: 0;
+  cursor: pointer;
+}
+
+.customConnectBtn:before {
+  content: '';
+  /* background: linear-gradient(45deg,#44f8f8, #002bff, #7a00ff,#181e93, #0feee7); */
+  background: linear-gradient(45deg, #f8d144, #f8812c, #f02101, #ea5200, #ffc400);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 1;
+  transition: opacity .3s ease-in-out, animation-play-state 0s;
+  border-radius: 10px;
+}
+
+.customConnectBtn:active {
+  color: #1A232E;
+}
+
+.customConnectBtn:active:after {
+  background: transparent;
+}
+
+.customConnectBtn:hover:before {
+  opacity: 1;
+  animation-play-state: paused;
+  /* Pause the animation on hover */
+  filter: brightness(0.9);
+}
+
+.customConnectBtn:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
+  background: #1A232E;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+
+/* Connect wallet BTN */
+.mintStamp {
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+.mintStamp:before {
+  content: '';
+  /* background: linear-gradient(45deg,#44f8f8, #002bff, #7a00ff,#181e93, #0feee7); */
+  background: linear-gradient(45deg, #f8d144, #f8812c, #ea5200, #ffc400, #f02101);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 1;
+  transition: opacity .3s ease-in-out, animation-play-state 0s;
+  border-radius: 100px;
+  scale: 0.55;
+}
+
+.mintStamp:active {
+  color: #1A232E;
+}
+
+.mintStamp:active:after {
+  background: transparent;
+}
+
+.mintStamp:hover:before {
+  opacity: 1;
+  /* Pause the animation on hover */
+  /* filter: brightness(0.9); */
+}
+
+.mintStamp:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #1A232E;
+  left: 0;
+  top: 0;
+  border-radius: 100px;
+  scale: 0.5;
 }

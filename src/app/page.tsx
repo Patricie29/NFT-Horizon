@@ -1,12 +1,11 @@
 
+import Footer from "@/components/Footer";
 import About from "@/sections/About";
 import Explore from "@/sections/Explore";
-import Feedback from "@/sections/Feedback";
-import GetStarted from "@/sections/GetStarted";
+
 import Insights from "@/sections/Insights";
 import Main from "@/sections/Main";
 import WhatsNew from "@/sections/WhatsNew";
-import Link from "next/link";
 
 export default function Home() {
   return (
@@ -18,7 +17,6 @@ export default function Home() {
         <Explore />
       </div>
       <div className="relative">
-        <GetStarted />
         <div className="gradient-04 z-0" />
         <WhatsNew />
       </div>
@@ -27,6 +25,7 @@ export default function Home() {
         <Insights />
         <div className="gradient-04 z-0" />
         {/* <Feedback /> */}
+        <Footer />
       </div>
     </main>
   )

@@ -20,11 +20,11 @@ const Navbar: FC<NavbarProps> = ({ }) => {
         viewport={{ once: false }}
         className={`${styles.xPaddings} py-8 relative`}
     >
-        <div className='absolute w-[100%] inset-8 gradient-01' />
+        <div className='absolute max-w-[100vw] inset-4 gradient-01' />
         <div className={`${styles.innerWidth} mx-auto text-center sm:flex justify-between max-w-[940px] relative`}>
             <h2 className='text-[15px] font-light leading-[35px] border rounded-[6px] px-6 py-1 text-white cursor-pointer'>MARKETPLACE</h2>
-            <Link href={'/'} className='cursor-pointer'>  <h2 className='text-[15px] font-light leading-[35px] border rounded-[6px] px-6 py-1 text-white cursor-pointer'>NFT VERSE</h2></Link>
-            <Link href={'/nft'} className='cursor-pointer'>  <h2 className='text-[15px] font-light leading-[35px] border rounded-[6px] px-6 py-1 text-white cursor-pointer'>MINT OUR NFT</h2></Link>
+            <Link href={'/'} className='cursor-pointer'>  <h2 className='text-[15px] font-light leading-[35px] border rounded-[6px] px-6 py-1 text-white cursor-pointer'>HORIZON</h2></Link>
+            <Link href={'/nft'} className='cursor-pointer'>  <h2 className='text-[15px] font-light leading-[35px] border rounded-[6px] px-6 py-1 text-white cursor-pointer'>TRY THE MINT</h2></Link>
 
         </div>
 
